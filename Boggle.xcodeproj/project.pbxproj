@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BB7B041223195DF00FA5278 /* Token.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7B040223195DF00FA5278 /* Token.cpp */; };
 		1BF6EE0C222F73AA00DF05B7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BF6EE0B222F73AA00DF05B7 /* main.cpp */; };
+		1BF6EE1C222F818300DF05B7 /* Boggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BF6EE1B222F818300DF05B7 /* Boggle.cpp */; };
+		1BF6EE262230C10900DF05B7 /* Dictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BF6EE252230C10900DF05B7 /* Dictionary.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1BB7B040223195DF00FA5278 /* Token.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Token.cpp; sourceTree = "<group>"; };
+		1BB7B042223195EB00FA5278 /* Token.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Token.h; sourceTree = "<group>"; };
 		1BF6EE08222F73AA00DF05B7 /* Boggle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Boggle; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF6EE0B222F73AA00DF05B7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1BF6EE1B222F818300DF05B7 /* Boggle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Boggle.cpp; sourceTree = "<group>"; };
+		1BF6EE1D222F819100DF05B7 /* Boggle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Boggle.h; sourceTree = "<group>"; };
+		1BF6EE242230BEC800DF05B7 /* Dictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dictionary.h; sourceTree = "<group>"; };
+		1BF6EE252230C10900DF05B7 /* Dictionary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dictionary.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				1BF6EE0B222F73AA00DF05B7 /* main.cpp */,
+				1BF6EE1B222F818300DF05B7 /* Boggle.cpp */,
+				1BF6EE1D222F819100DF05B7 /* Boggle.h */,
+				1BF6EE242230BEC800DF05B7 /* Dictionary.h */,
+				1BF6EE252230C10900DF05B7 /* Dictionary.cpp */,
+				1BB7B040223195DF00FA5278 /* Token.cpp */,
+				1BB7B042223195EB00FA5278 /* Token.h */,
 			);
 			path = Boggle;
 			sourceTree = "<group>";
@@ -119,6 +134,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BF6EE0C222F73AA00DF05B7 /* main.cpp in Sources */,
+				1BF6EE262230C10900DF05B7 /* Dictionary.cpp in Sources */,
+				1BF6EE1C222F818300DF05B7 /* Boggle.cpp in Sources */,
+				1BB7B041223195DF00FA5278 /* Token.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
