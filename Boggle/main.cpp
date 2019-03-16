@@ -23,17 +23,16 @@ int main()
     
     // implementation goes here
     
-    Dictionary dict("Solution.txt");
-//    dict.printMe();
+    Dictionary dict("DictionaryLarge.txt");
     
     Boggle bog("winmloraftbdepsj");
     bog.printMe();
-
+    
     bog.printInstructions();
-
+    
     bool turn = false;
     std::string guess;
-
+    
     while(!turn)
     {
         std::cout << "Enter guess: ";

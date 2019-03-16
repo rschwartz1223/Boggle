@@ -222,6 +222,11 @@ bool Boggle::isValidGuess(string wordGuess)
 bool Boggle::takeTurn(string word, Dictionary *d)
 {
     // implementation goes here
+    if(word == "EXIT")
+    {
+        std::cout << "Thank you for playing Boggle!\n";
+        return false;
+    }
     if(!isValidGuess(word))
     {
         std::cout << "Please enter a valid guess.\n";
@@ -231,7 +236,7 @@ bool Boggle::takeTurn(string word, Dictionary *d)
     
     if(d->hasWord(word))
     {
-        if(wordsFoundSoFar.find(word) != wordsFoundSoFar.end())
+        if(wordsFoundSoFar.find(word) == wordsFoundSoFar.end())
         {
             wordsFoundSoFar.insert(word);
             std::cout << "'" << word << "' is a valid guess AND is a word in the dictionary. Scores +1 point.\n";
@@ -249,8 +254,6 @@ bool Boggle::takeTurn(string word, Dictionary *d)
         std::cout << "'" << word << "' is a valid guess but NOT a word in the dictionary. Scores 0 points.\n";
         return false;
     }
-    
-    
     
     return false; // game is not over
 }
