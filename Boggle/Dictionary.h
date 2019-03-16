@@ -12,14 +12,13 @@
 #include <set>
 #include <string>
 
-using namespace std;
-
-class Dictionary{
-    set<string> words; // a set of unique words
+class Dictionary
+{
+    std::set<std::string> words; // a set of unique words
 public:
-    Dictionary(string fileName); // constructor that builds the dictionary based on a string filename
+    Dictionary(std::string fileName); // constructor that builds the dictionary based on a string filename
     void printMe(); // ability to print the dictionary (only for debug, not advised for large dictionary)
-    bool hasWord(string word); // return true if the set has a requested word
+    bool hasWord(std::string word); // return true if the set has a requested word
 };
 
 #endif
