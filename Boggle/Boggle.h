@@ -40,9 +40,6 @@ public:
     bool isNeighbor(Token t1, Token t2); // return true if t1 is a neighbor of t2 (exactly 1 square away on the grid)
     bool takeTurn(string wordGuess, Dictionary *d); // process a player guess by checking its validity
     // and then seeing if it is in the dictionary POINTED to by d
-    
-    void solve(Dictionary *d); // BONUS
-    
 };
 
 #endif
