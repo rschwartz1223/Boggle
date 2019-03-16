@@ -257,10 +257,3 @@ bool Boggle::takeTurn(string word, Dictionary *d)
     
     return false; // game is not over
 }
-
-// BONUS::
-void Boggle::solve(Dictionary *d){
-    // implementation goes here
-}
-
-
